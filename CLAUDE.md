@@ -5,8 +5,8 @@
 - Run all tests: `dotnet test HADotNet.Core.Tests/HADotNet.Core.Tests.csproj`
 - Run specific test: `dotnet test HADotNet.Core.Tests/HADotNet.Core.Tests.csproj --filter "FullyQualifiedName=HADotNet.Core.Tests.<TestClass>.<TestMethod>"`
 - Before running tests, set environment variables:
-  - `HADotNet:Tests:Instance` = Home Assistant URL
-  - `HADotNet:Tests:ApiKey` = API key
+  - `HADotNet_Tests_Instance` = Home Assistant URL
+  - `HADotNet_Tests_ApiKey` = API key
 
 ## Code Style Guidelines
 - **Naming**: PascalCase for classes, methods, properties; verb-noun pattern for methods

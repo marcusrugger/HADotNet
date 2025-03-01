@@ -221,8 +221,8 @@ var myCameraImage = await cameraClient.GetCameraImageAsBase64("camera.my_camera"
 
 To run the unit tests, you must first set two environment variables:
 
-* `HADotNet:Tests:Instance` = `https://my-home-assistant-url/`
-* `HADotNet:Tests:ApiKey` = `AbCdEf0123456789...`
+* `HADotNet_Tests_Instance` = `https://my-home-assistant-url/`
+* `HADotNet_Tests_ApiKey` = `AbCdEf0123456789...`
 
 ## Collaborating
 

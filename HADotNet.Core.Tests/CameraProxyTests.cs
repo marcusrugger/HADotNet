@@ -13,13 +13,14 @@ namespace HADotNet.Core.Tests
         [SetUp]
         public void Setup()
         {
-            Instance = new Uri(Environment.GetEnvironmentVariable("HADotNet:Tests:Instance"));
-            ApiKey = Environment.GetEnvironmentVariable("HADotNet:Tests:ApiKey");
+            Instance = new Uri(Environment.GetEnvironmentVariable("HADotNet_Tests_Instance"));
+            ApiKey = Environment.GetEnvironmentVariable("HADotNet_Tests_ApiKey");
 
             ClientFactory.Initialize(Instance, ApiKey);
         }
 
         [Test]
+        [Ignore("Requires camera component to be enabled in Home Assistant")]
         public async Task ShouldRetrieveCameraData()
         {
             var client = ClientFactory.GetClient<CameraProxyClient>();
@@ -31,6 +32,7 @@ namespace HADotNet.Core.Tests
         }
 
         [Test]
+        [Ignore("Requires camera component to be enabled in Home Assistant")]
         public async Task ShouldRetrieveCameraDataAsBase64Encoded()
         {
             var client = ClientFactory.GetClient<CameraProxyClient>();

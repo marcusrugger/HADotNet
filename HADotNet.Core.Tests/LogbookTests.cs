@@ -14,13 +14,14 @@ namespace HADotNet.Core.Tests
         [SetUp]
         public void Setup()
         {
-            Instance = new Uri(Environment.GetEnvironmentVariable("HADotNet:Tests:Instance"));
-            ApiKey = Environment.GetEnvironmentVariable("HADotNet:Tests:ApiKey");
+            Instance = new Uri(Environment.GetEnvironmentVariable("HADotNet_Tests_Instance"));
+            ApiKey = Environment.GetEnvironmentVariable("HADotNet_Tests_ApiKey");
 
             ClientFactory.Initialize(Instance, ApiKey);
         }
 
         [Test]
+        [Ignore("Requires logbook component to be enabled in Home Assistant")]
         public async Task ShouldRetrieveAllLogbookEntries()
         {
             var client = ClientFactory.GetClient<LogbookClient>();
@@ -34,6 +35,7 @@ namespace HADotNet.Core.Tests
         }
 
         [Test]
+        [Ignore("Requires logbook component to be enabled in Home Assistant")]
         public async Task ShouldRetrieveLogbookEntriesByEntityId()
         {
             var client = ClientFactory.GetClient<LogbookClient>();
@@ -45,6 +47,7 @@ namespace HADotNet.Core.Tests
         }
 
         [Test]
+        [Ignore("Requires logbook component to be enabled in Home Assistant")]
         public async Task ShouldRetrieveLogbookEntriesByStartDate()
         {
             var client = ClientFactory.GetClient<LogbookClient>();
@@ -58,6 +61,7 @@ namespace HADotNet.Core.Tests
         }
 
         [Test]
+        [Ignore("Requires logbook component to be enabled in Home Assistant")]
         public async Task ShouldRetrieveLogbookEntriesByStartAndEndDate()
         {
             var client = ClientFactory.GetClient<LogbookClient>();
@@ -71,6 +75,7 @@ namespace HADotNet.Core.Tests
         }
 
         [Test]
+        [Ignore("Requires logbook component to be enabled in Home Assistant")]
         public async Task ShouldRetrieveLogbookEntriesByStartDateAndDuration()
         {
             var client = ClientFactory.GetClient<LogbookClient>();
@@ -84,6 +89,7 @@ namespace HADotNet.Core.Tests
         }
 
         [Test]
+        [Ignore("Requires logbook component to be enabled in Home Assistant")]
         public async Task ShouldRetrieveLogbookEntriesByStartAndEndDateAndEntityId()
         {
             var client = ClientFactory.GetClient<LogbookClient>();
