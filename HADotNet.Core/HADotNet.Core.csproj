@@ -4,23 +4,20 @@
     <TargetFramework>net9.0</TargetFramework>
     <PackOnBuild>true</PackOnBuild>
     <PackageId>HADotNet.Core</PackageId>
-    <PackageVersion>0.1.0</PackageVersion>
     <Authors>https://github.com/qJake</Authors>
     <Description>A Home Assistant library for .NET Standard that allows access to the Home Assistant external API.</Description>
+    <Version>1.6.0.*</Version>
     <NeutralLanguage>en-US</NeutralLanguage>
     <Summary>A library for working with the Home Asstant API.</Summary>
     <PackageTags>home-assistant external api library</PackageTags>
     <Title>HADotNet Core Library</Title>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <Version>1.6.0</Version>
     <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
     <PackageProjectUrl>https://github.com/qJake/HADotNet</PackageProjectUrl>
     <RepositoryUrl>https://github.com/qJake/HADotNet.git</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
     <PackageReleaseNotes></PackageReleaseNotes>
     <LangVersion>latest</LangVersion>
-    <AssemblyVersion>1.6.0.0</AssemblyVersion>
-    <FileVersion>1.6.0.0</FileVersion>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
